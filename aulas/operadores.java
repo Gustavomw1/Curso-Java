@@ -29,5 +29,28 @@ public class operadores {
         System.out.println(idadeMaiorQueTrinta);
         System.out.println(idadeMenorQueTrinta);
 
+        double valorTotalContaCorrente = 200;
+        double valorTotalPoupança = 10000;
+        float valorPlaystation = 500F;
+        boolean isPlaystationCincoCompravel = valorTotalContaCorrente > valorPlaystation
+                || valorTotalPoupança > valorPlaystation;
+        System.out.println("play " + isPlaystationCincoCompravel);
+
+        // = += -+ *= /= %=
+
+        double bonus = 1800;
+        bonus += 1000;
+        System.out.println(bonus);
+
+        // ++ --
+        int contador = 0;
+        contador += 1;
+        contador++;
+        contador--;
+        ++contador;
+        --contador;
+        int contador2 = 0;
+        System.out.println(contador);
+        System.out.println(contador2);
     }
 }
