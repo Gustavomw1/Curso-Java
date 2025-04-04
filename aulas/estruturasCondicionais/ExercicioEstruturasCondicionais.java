@@ -11,7 +11,5 @@ public class ExercicioEstruturasCondicionais {
         } else {
             System.out.println("Você nao pode compra esse produto.");
         }
-
-        // Desafio com || (ou)
     }
 }
