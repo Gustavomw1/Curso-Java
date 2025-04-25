@@ -2,10 +2,10 @@ package aulas.javaCoreOrientacaoObjetos.introducaoMetodos.test;
 
 import aulas.javaCoreOrientacaoObjetos.introducaoMetodos.dominio.Calculadora;
 
-public class calculadoraTest01 {
+public class calculadoraTest03 {
     public static void main(String[] args) {
         Calculadora calculadora = new Calculadora();
-        calculadora.somaDoisNumeros();
-        calculadora.subtraiDoisNumeros();
+        double result = calculadora.divideDoisNumeros(20, 2);
+        System.out.println(result);
     }
 }
