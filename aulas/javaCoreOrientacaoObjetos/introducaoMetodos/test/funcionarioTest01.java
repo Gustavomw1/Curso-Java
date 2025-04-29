@@ -11,5 +11,6 @@ public class funcionarioTest01 {
         funcionario.salarios = new double[] { 3000, 1800, 2000 };
 
         funcionario.imprime();
+        funcionario.imprimeMediaSalarial();
     }
 }
