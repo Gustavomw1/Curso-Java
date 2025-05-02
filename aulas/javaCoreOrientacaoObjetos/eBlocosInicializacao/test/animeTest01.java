@@ -10,5 +10,4 @@ public class animeTest01 {
             System.out.println(episodio + " ");
         }
     }
-
 }
