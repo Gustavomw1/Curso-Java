@@ -7,6 +7,10 @@ public class Anime {
     private String genero;
     private String estudio;
 
+    public Anime() {
+        System.out.println("Dentro do construtor sem argumentos");
+    }
+
     public Anime(String nome, int episodios, String tipo, String genero) {
         this();
         this.nome = nome;
@@ -17,49 +21,54 @@ public class Anime {
 
     public Anime(String nome, int episodios, String tipo, String genero, String estudio) {
         this(nome, episodios, tipo, genero);
-        this.genero = genero;
-    }
-
-    public Anime() {
-        System.out.println("Dentro do construtor sem argumentos");
+        this.estudio = estudio;
     }
 
     public void imprime() {
-        System.out.println(this.nome);
-        System.out.println(this.tipo);
-        System.out.println(this.episodios);
-        System.out.println(this.genero);
+        System.out.println("Nome: " + nome);
+        System.out.println("Tipo: " + tipo);
+        System.out.println("Episódios: " + episodios);
+        System.out.println("Gênero: " + genero);
+        System.out.println("Estúdio: " + estudio);
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public String getTipo() {
-        return this.tipo;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-
-    public String getGenero() {
-        return this.genero;
+    public String getNome() {
+        return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String getNome() {
-        return this.nome;
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getEpisodios() {
+        return episodios;
     }
 
     public void setEpisodios(int episodios) {
         this.episodios = episodios;
     }
 
-    public int getEpisodios() {
-        return this.episodios;
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getEstudio() {
+        return estudio;
+    }
+
+    public void setEstudio(String estudio) {
+        this.estudio = estudio;
     }
 }
